@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seat Selection</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>🎬 NAVYA THEATRE</h1>
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="movies.html">Movies</a>
+
+<a href="payment.html">Book Tickets</a>
+
+</nav>
+
+<div class="container">
+
+<h2 align="center">Select Your Seat</h2>
+
+<div class="screen">
+SCREEN
+</div>
+
+<div class="seat-layout">
+
+<div class="row">
+
+<span>A</span>
+
+<div class="seat" onclick="selectSeat(this)">A1</div>
+<div class="seat" onclick="selectSeat(this)">A2</div>
+<div class="seat" onclick="selectSeat(this)">A3</div>
+<div class="seat" onclick="selectSeat(this)">A4</div>
+
+<div class="gap"></div>
+
+<div class="seat" onclick="selectSeat(this)">A5</div>
+<div class="seat" onclick="selectSeat(this)">A6</div>
+<div class="seat" onclick="selectSeat(this)">A7</div>
+<div class="seat" onclick="selectSeat(this)">A8</div>
+
+</div>
+
+<div class="row">
+
+<span>B</span>
+
+<div class="seat" onclick="selectSeat(this)">B1</div>
+<div class="seat" onclick="selectSeat(this)">B2</div>
+<div class="seat" onclick="selectSeat(this)">B3</div>
+<div class="seat" onclick="selectSeat(this)">B4</div>
+
+<div class="gap"></div>
+
+<div class="seat" onclick="selectSeat(this)">B5</div>
+<div class="seat" onclick="selectSeat(this)">B6</div>
+<div class="seat" onclick="selectSeat(this)">B7</div>
+<div class="seat" onclick="selectSeat(this)">B8</div>
+
+</div>
+
+<div class="row">
+
+<span>C</span>
+
+<div class="seat" onclick="selectSeat(this)">C1</div>
+<div class="seat" onclick="selectSeat(this)">C2</div>
+<div class="seat" onclick="selectSeat(this)">C3</div>
+<div class="seat" onclick="selectSeat(this)">C4</div>
+
+<div class="gap"></div>
+
+<div class="seat" onclick="selectSeat(this)">C5</div>
+<div class="seat" onclick="selectSeat(this)">C6</div>
+<div class="seat" onclick="selectSeat(this)">C7</div>
+<div class="seat" onclick="selectSeat(this)">C8</div>
+
+</div>
+
+<div class="row">
+
+<span>D</span>
+
+<div class="seat" onclick="selectSeat(this)">D1</div>
+<div class="seat" onclick="selectSeat(this)">D2</div>
+<div class="seat" onclick="selectSeat(this)">D3</div>
+<div class="seat" onclick="selectSeat(this)">D4</div>
+
+<div class="gap"></div>
+
+<div class="seat" onclick="selectSeat(this)">D5</div>
+<div class="seat" onclick="selectSeat(this)">D6</div>
+<div class="seat" onclick="selectSeat(this)">D7</div>
+<div class="seat" onclick="selectSeat(this)">D8</div>
+
+</div>
+
+</div>
+
+<div class="booking-info">
+
+<h3>Movie :
+<span id="movieName"></span>
+</h3>
+
+<h3>Show Time :
+<span id="showTime"></span>
+</h3>
+
+<h3>Selected Seat :
+<span id="seatNumber">None</span>
+</h3>
+
+<h3>Total :
+₹250
+</h3>
+
+<a href="payment.html">
+
+<button>Continue</button>
+
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("movieName").innerHTML=
+localStorage.getItem("movie");
+
+document.getElementById("showTime").innerHTML=
+localStorage.getItem("showTime");
+
+</script>
+
+</body>
+</html>

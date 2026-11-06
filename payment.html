@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment - Navya Theatre</title>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+
+</head>
+
+<body onload="loadPayment()">
+
+<header>
+<h1>🎬 NAVYA THEATRE</h1>
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="movies.html">Movies</a>
+
+<a href="payment.html">Book Tickets</a>
+
+</nav>
+
+<div class="container">
+
+<h1 align="center">Payment & Booking Summary</h1>
+
+<div class="payment-container">
+
+<!-- Booking Summary -->
+
+<div class="summary">
+
+<h2>Booking Summary</h2>
+
+<hr>
+
+<p><b>Movie :</b> <span id="movie"></span></p>
+
+<p><b>Show Time :</b> <span id="showTime"></span></p>
+
+<p><b>Seat :</b> <span id="seat"></span></p>
+
+<p><b>Ticket Price :</b> ₹<span id="price"></span></p>
+
+</div>
+
+<!-- Customer Details -->
+
+<div class="details">
+
+<h2>Customer Details</h2>
+
+<form>
+
+<label>Name</label>
+
+<input type="text" placeholder="Enter Name" required>
+
+<label>Phone Number</label>
+
+<input type="tel" placeholder="Enter Mobile Number" required>
+
+<label>Email</label>
+
+<input type="email" placeholder="Enter Email" required>
+
+<label>Payment Method</label>
+
+<br><br>
+
+<input type="radio" name="pay"> UPI
+
+<input type="radio" name="pay"> Credit Card
+
+<input type="radio" name="pay"> Debit Card
+
+<br><br>
+
+<label>UPI ID / Card Number</label>
+
+<input type="text" placeholder="Enter UPI ID / Card Number">
+
+<h3>Total Amount : ₹<span id="price2"></span></h3>
+
+<button type="button" onclick="paymentSuccess()">
+Pay Now
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 Navya Theatre | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
